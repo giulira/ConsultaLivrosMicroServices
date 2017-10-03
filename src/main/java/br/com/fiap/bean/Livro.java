@@ -8,7 +8,7 @@ import javax.persistence.Id;
 
 import org.glassfish.jersey.process.internal.RequestScoped;
 
-@Entity(name="livros")
+//@Entity(name="livros")
 @RequestScoped
 public class Livro implements Serializable{
 
@@ -17,20 +17,20 @@ public class Livro implements Serializable{
 	 */
 	private static final long serialVersionUID = 1L;
 
-	@Id
-	@Column(name="id_livros",unique=true, nullable=false)
+	/*@Id
+	@Column(name="id_livros",unique=true, nullable=false)*/
 	private int id;
 	
-	@Column(name="titulo")
+	//@Column(name="titulo")
 	private String titulo;
 	
-	@Column(name="autor")
+	//@Column(name="autor")
 	private String autor;
 	
-	@Column(name="ano")
+	//@Column(name="ano")
 	private int ano;
 	
-	@Column(name="isbn")
+	//@Column(name="isbn")
 	private String isbn;
 	
 	
